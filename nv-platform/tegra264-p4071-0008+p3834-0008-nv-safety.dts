@@ -10,6 +10,11 @@
 	compatible = "nvidia,p4071-0008+p3834-0008", "safety", "nvidia,p3834-0008", "nvidia,tegra264";
 
 	bus@0 {
+		tegra-hsp@8c00000 {
+			compatible = "nvidia,tegra264-hsp";
+			status = "okay";
+		};
+
 		tegra-hsp@8d00000 {
 			compatible = "nvidia,tegra264-hsp";
 			status = "okay";
@@ -40,6 +45,22 @@
 
 	nvtherm-oc-event {
 		status = "disabled";
+	};
+
+	fsicom_client {
+		status = "okay";
+		iommus = <&smmu4_mmu 0xF10>;
+	};
+
+	FsiComIvc {
+		status = "okay";
+	};
+
+	/* FSI<->CCPLEX Communication through DRAM Carveout demo app */
+	FsiComAppChConfApp1 {
+		compatible = "nvidia,tegra-fsicom-sampleApp1";
+		status = "okay";
+		channelid_list = <3>;
 	};
 
 	safetyservices_epl_client@110000 {
