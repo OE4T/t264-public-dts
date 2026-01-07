@@ -5475,6 +5475,7 @@
 
 			linux,pci-domain = <0x2>;
 			nvidia,bpmp = <&bpmp 0x2>;
+			nvidia,host1x = <&host1x>;
 		};
 
 		pcie@a808440000 {
@@ -5591,6 +5592,7 @@
 
 			linux,pci-domain = <0x4>;
 			nvidia,bpmp = <&bpmp 0x4>;
+			nvidia,host1x = <&host1x>;
 		};
 
 		pcie@a808480000 {
@@ -5667,6 +5669,7 @@
 
 			linux,pci-domain = <0x5>;
 			nvidia,bpmp = <&bpmp 0x5>;
+			nvidia,host1x = <&host1x>;
 		};
 
 		mgbe_riit_config: mgbe-riit-config {
