@@ -6,7 +6,6 @@
 #include "nv-soc/tegra264-soc-thermal-slowdown-disable.dtsi"
 
 / {
-	model = "NVIDIA IGX7000 Thor";
 	compatible = "nvidia,p3740-0002+p3834-0008", "safety", "nvidia,p3834-0008", "nvidia,tegra264";
 
 	bus@0 {
