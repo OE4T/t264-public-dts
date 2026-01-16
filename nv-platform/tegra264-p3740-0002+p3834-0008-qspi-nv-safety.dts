@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-// SPDX-FileCopyrightText: Copyright (c) 2025, NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+// SPDX-FileCopyrightText: Copyright (c) 2025-2026, NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
 /dts-v1/;
 
 #include "tegra264-p3740-0002+p3834-0008-qspi-nvme.dts"
@@ -16,6 +16,7 @@
 		};
 
 		tegra-hsp@8d00000 {
+			compatible = "nvidia,tegra264-hsp";
 			status = "okay";
 		};
 
